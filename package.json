@@ -1,0 +1,15 @@
+{
+  "name": "postpic",
+  "version": "1.0.0",
+  "description": "Post pictures to a feed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "product17",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.2.1",
+    "passport": "^0.3.2"
+  }
+}
