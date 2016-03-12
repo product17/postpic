@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "receiver",
+      "script": "bin/www",
+      "args": ["--toto=heya coco", "-d", "1"],
+      "watch": true,
+      "cwd": "/Users/brent/Sites/postpic",
+      "error_file": "~/.pm2/log/receiver-error.log",
+      "out_file": "~/.pm2/log/receiver-stdout.log",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 3000
+      },
+      "env_production" : {
+         "NODE_ENV": "production"
+      }
+    }
+  ]
+}

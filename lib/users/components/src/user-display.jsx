@@ -1,18 +1,14 @@
-// @ifdef IS_NODE
 'use strict';
 
-const React = require('react');
+import React from 'react';
 // const _ = require('lodash');
-// @endif
 
-const UserDisplay = React.createClass({
-  render: () => (
-      <div className="col-sm-6 col-sm-offset-3">
-        <h4>User Display</h4>
-      </div>
+class UserDisplay extends React.Component {
+  render (
+    <div className="col-sm-6 col-sm-offset-3">
+      <h4>User Display</h4>
+    </div>
   ),
 });
 
-// @ifdef IS_NODE
-exports = UserDisplay;
-// @endif
+module.exports = UserDisplay;

@@ -1,12 +1,10 @@
-// @ifdef IS_NODE
 'use strict';
 
 const React = require('react');
 // const _ = require('lodash');
-// @endif
 
-const UserCreateForm = React.createClass({
-  render: () => (
+class UserCreateForm extends React.Compoent {
+  render (
       <div className="col-sm-6 col-sm-offset-3">
         <h4>Login</h4>
         <form action="/user/login" method="post">
@@ -14,8 +12,6 @@ const UserCreateForm = React.createClass({
         </form>
       </div>
   ),
-});
+};
 
-// @ifdef IS_NODE
 exports = UserCreateForm;
-// @endif
